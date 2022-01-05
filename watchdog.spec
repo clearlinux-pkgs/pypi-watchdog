@@ -4,7 +4,7 @@
 #
 Name     : watchdog
 Version  : 2.1.6
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/e8/a8/fc4edd7d768361b00ea850e5310211d157df6b5a1db6148dd434e787d898/watchdog-2.1.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e8/a8/fc4edd7d768361b00ea850e5310211d157df6b5a1db6148dd434e787d898/watchdog-2.1.6.tar.gz
 Summary  : Filesystem events monitoring
@@ -14,8 +14,6 @@ Requires: watchdog-bin = %{version}-%{release}
 Requires: watchdog-license = %{version}-%{release}
 Requires: watchdog-python = %{version}-%{release}
 Requires: watchdog-python3 = %{version}-%{release}
-Requires: PyYAML
-BuildRequires : PyYAML
 BuildRequires : buildreq-distutils3
 
 %description
@@ -70,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635537599
+export SOURCE_DATE_EPOCH=1641419724
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
