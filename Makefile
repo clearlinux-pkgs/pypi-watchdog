@@ -1,5 +1,5 @@
 PKG_NAME := pypi-watchdog
-URL = https://files.pythonhosted.org/packages/b3/d2/a04951838e0b0cea20aff5214109144e6869101818e7f90bf3b68ea2facf/watchdog-2.1.7.tar.gz
+URL = https://files.pythonhosted.org/packages/90/61/ddbf959d24fab35a98a8311e95d581e55109560e524f1a5a299ee991499d/watchdog-2.1.8.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
