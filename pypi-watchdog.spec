@@ -4,7 +4,7 @@
 #
 Name     : pypi-watchdog
 Version  : 2.2.1
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/11/6f/0396d373e039b89c60e23a1a9025edc6dd203121fe0af7d1427e85d5ec98/watchdog-2.2.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/11/6f/0396d373e039b89c60e23a1a9025edc6dd203121fe0af7d1427e85d5ec98/watchdog-2.2.1.tar.gz
 Summary  : Filesystem events monitoring
