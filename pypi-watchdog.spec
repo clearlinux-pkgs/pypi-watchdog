@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-watchdog
-Version  : 4.0.2
-Release  : 29
-URL      : https://files.pythonhosted.org/packages/4f/38/764baaa25eb5e35c9a043d4c4588f9836edfe52a708950f4b6d5f714fd42/watchdog-4.0.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/4f/38/764baaa25eb5e35c9a043d4c4588f9836edfe52a708950f4b6d5f714fd42/watchdog-4.0.2.tar.gz
+Version  : 5.0.0
+Release  : 30
+URL      : https://files.pythonhosted.org/packages/f2/b5/9943b585553bbda2a2795fb0db1d26267e8728f64cb15205dc640a5ecde0/watchdog-5.0.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/f2/b5/9943b585553bbda2a2795fb0db1d26267e8728f64cb15205dc640a5ecde0/watchdog-5.0.0.tar.gz
 Summary  : Filesystem events monitoring
 Group    : Development/Tools
 License  : Apache-2.0
@@ -71,10 +71,10 @@ python3 components for the pypi-watchdog package.
 
 
 %prep
-%setup -q -n watchdog-4.0.2
-cd %{_builddir}/watchdog-4.0.2
+%setup -q -n watchdog-5.0.0
+cd %{_builddir}/watchdog-5.0.0
 pushd ..
-cp -a watchdog-4.0.2 buildavx2
+cp -a watchdog-5.0.0 buildavx2
 popd
 
 %build
@@ -82,7 +82,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1723474196
+export SOURCE_DATE_EPOCH=1724712448
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -127,7 +127,6 @@ LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-watchdog
-cp %{_builddir}/watchdog-%{version}/COPYING %{buildroot}/usr/share/package-licenses/pypi-watchdog/aa949e9aeb3398f2f58b1f03baba6c0b2173a476 || :
 cp %{_builddir}/watchdog-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-watchdog/2b8b815229aa8a61e483fb4ba0588b8b6c491890 || :
 python3 -m installer --destdir=%{buildroot} dist/*.whl
 echo ----[ mark ]----
@@ -153,7 +152,6 @@ popd
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/pypi-watchdog/2b8b815229aa8a61e483fb4ba0588b8b6c491890
-/usr/share/package-licenses/pypi-watchdog/aa949e9aeb3398f2f58b1f03baba6c0b2173a476
 
 %files python
 %defattr(-,root,root,-)
