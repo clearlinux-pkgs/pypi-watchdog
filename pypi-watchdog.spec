@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-watchdog
-Version  : 5.0.1
-Release  : 31
-URL      : https://files.pythonhosted.org/packages/f1/d1/25c4b583ec107c9cccacd57ab3bf106441a60c084bf4656cf46876fdbc3f/watchdog-5.0.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/f1/d1/25c4b583ec107c9cccacd57ab3bf106441a60c084bf4656cf46876fdbc3f/watchdog-5.0.1.tar.gz
+Version  : 5.0.2
+Release  : 32
+URL      : https://files.pythonhosted.org/packages/cd/5e/95dcd86d8339fcf76385f7fad5e49cbfd989b6c6199127121c9587febc65/watchdog-5.0.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/cd/5e/95dcd86d8339fcf76385f7fad5e49cbfd989b6c6199127121c9587febc65/watchdog-5.0.2.tar.gz
 Summary  : Filesystem events monitoring
 Group    : Development/Tools
 License  : Apache-2.0
@@ -71,10 +71,10 @@ python3 components for the pypi-watchdog package.
 
 
 %prep
-%setup -q -n watchdog-5.0.1
-cd %{_builddir}/watchdog-5.0.1
+%setup -q -n watchdog-5.0.2
+cd %{_builddir}/watchdog-5.0.2
 pushd ..
-cp -a watchdog-5.0.1 buildavx2
+cp -a watchdog-5.0.2 buildavx2
 popd
 
 %build
@@ -82,7 +82,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1725307280
+export SOURCE_DATE_EPOCH=1725405594
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
