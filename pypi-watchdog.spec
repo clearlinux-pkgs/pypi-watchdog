@@ -7,7 +7,7 @@
 #
 Name     : pypi-watchdog
 Version  : 5.0.3
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/a2/48/a86139aaeab2db0a2482676f64798d8ac4d2dbb457523f50ab37bf02ce2c/watchdog-5.0.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a2/48/a86139aaeab2db0a2482676f64798d8ac4d2dbb457523f50ab37bf02ce2c/watchdog-5.0.3.tar.gz
 Summary  : Filesystem events monitoring
