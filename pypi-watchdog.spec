@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-watchdog
-Version  : 5.0.3
-Release  : 34
-URL      : https://files.pythonhosted.org/packages/a2/48/a86139aaeab2db0a2482676f64798d8ac4d2dbb457523f50ab37bf02ce2c/watchdog-5.0.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/a2/48/a86139aaeab2db0a2482676f64798d8ac4d2dbb457523f50ab37bf02ce2c/watchdog-5.0.3.tar.gz
+Version  : 6.0.0
+Release  : 35
+URL      : https://files.pythonhosted.org/packages/db/7d/7f3d619e951c88ed75c6037b246ddcf2d322812ee8ea189be89511721d54/watchdog-6.0.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/db/7d/7f3d619e951c88ed75c6037b246ddcf2d322812ee8ea189be89511721d54/watchdog-6.0.0.tar.gz
 Summary  : Filesystem events monitoring
 Group    : Development/Tools
 License  : Apache-2.0
@@ -30,9 +30,11 @@ BuildRequires : pypi-virtualenv
 %description
 Watchdog
 ========
-|Build Status|
-|CirrusCI Status|
-Python API and shell utilities to monitor file system events.
+|PyPI Version|
+|PyPI Status|
+|PyPI Python Versions|
+|GitHub Build Status|
+|GitHub License|
 
 %package bin
 Summary: bin components for the pypi-watchdog package.
@@ -71,10 +73,10 @@ python3 components for the pypi-watchdog package.
 
 
 %prep
-%setup -q -n watchdog-5.0.3
-cd %{_builddir}/watchdog-5.0.3
+%setup -q -n watchdog-6.0.0
+cd %{_builddir}/watchdog-6.0.0
 pushd ..
-cp -a watchdog-5.0.3 buildavx2
+cp -a watchdog-6.0.0 buildavx2
 popd
 
 %build
@@ -82,7 +84,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1727466254
+export SOURCE_DATE_EPOCH=1730498478
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
